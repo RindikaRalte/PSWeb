@@ -28,3 +28,53 @@
    
     color: white;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+
+.content {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.content p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image, .content {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
